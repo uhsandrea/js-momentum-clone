@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap");
+
+body {
+  color: cornsilk;
+  background-color: #2c3e50;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Baloo 2", cursive;
+}
+
+.clock h1 {
+  margin: 0px;
+  font-size: 110px;
+}
+
+.form,
+.greeting {
+  display: none;
+}
+
+.showing {
+  display: block;
+  font-size: 30px;
+  margin: 0;
+}
+
+.showing input {
+  font-size: 30px;
+  border: none;
+  border-bottom: 2px solid cornsilk;
+  background-color: rgba(0, 0, 0, 0);
+  width: 280px;
+  color: cornsilk;
+  text-align: center;
+  font-family: "Baloo 2", cursive;
+}
+
+.showing input::placeholder {
+  color: cornsilk;
+  text-align: center;
+  font-family: "Baloo 2", cursive;
+}
+
+.showing input:focus {
+  outline: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.to-do-form input {
+  font-size: 18px;
+  border: none;
+  border-bottom: 1.5px solid cornsilk;
+  background-color: rgba(0, 0, 0, 0);
+  width: 140px;
+  color: cornsilk;
+  text-align: center;
+  font-family: "Baloo 2", cursive;
+}
+
+.to-do-form input::placeholder {
+  color: cornsilk;
+  text-align: center;
+  font-family: "Baloo 2", cursive;
+}
+
+.to-do-form input:focus {
+  outline: 0;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.weather {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content a {
+  color: cornsilk;
+  text-decoration: none;
+  display: block;
+  font-size: 14.7px;
+  margin-top: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
