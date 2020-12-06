@@ -17,6 +17,12 @@ body {
   font-size: 110px;
 }
 
+.clock h2 {
+  text-align: center;
+  margin: 0px;
+  font-size: 40px;
+}
+
 .form,
 .greeting {
   display: none;
