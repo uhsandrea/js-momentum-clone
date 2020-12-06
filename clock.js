@@ -8,7 +8,7 @@ function getTime() {
     const year = time.getFullYear();
     const month = time.getMonth()+1;
     const day = time.getDate();
-    dateTitle.innerText = `${year}/${month}/${day}`;
+    dateTitle.innerText = `${year}-${month < 10 ? `0${month}` : month}-${day < 10 ? `0${day}` : day}`;
     
     const minutes = time.getMinutes();
     const hours = time.getHours();
