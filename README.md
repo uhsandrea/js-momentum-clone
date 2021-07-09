@@ -1,3 +1,3 @@
-# JS Momentum Clone 2020 Update
+# JS Momentum Clone
 
-Vanilla Javascript:)
+Vanilla Javascript practice
